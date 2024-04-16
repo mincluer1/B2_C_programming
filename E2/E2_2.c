@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main( void ){
+	int n;
+
+	scanf( "%d", &n );
+
+    if ( n % 15 == 0 ){
+        printf("15ÇÃî{êî");
+    }
+    else if ( n % 5 == 0 ){
+        printf("ÇTÇÃî{êî");
+    }
+    else if ( n % 3 == 0 ){
+        printf("ÇRÇÃî{êî");
+    }
+    else{
+        printf("Ç¢Ç∏ÇÍÇ≈Ç‡Ç»Ç¢");
+    }
+
+
+	return 0;
+}
+ 
