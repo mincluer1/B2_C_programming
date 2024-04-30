@@ -10,13 +10,11 @@ int main(void){
     if ( a == 0.0 ){
         if ( b == 0.0 ) {
             printf("係数がおかしい。\n");
-        }
-        else {
+        } else {
             x1 = -c / b;
             printf("解は、%gです。\n", x1);
         }
-    }
-    else {
+    } else {
         D = b * b - 4 * a * c;
         if ( D >= 0.0 ){
             if ( D == 0 ) {
