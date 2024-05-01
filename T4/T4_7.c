@@ -10,12 +10,10 @@ int powint( int x, int p ) {
     return y;
 }
 
-int main(void){
-    int i, j;
+int main(void) {
 
-    for ( i = 0; i <= 10; i++ ) {
-        j = powint(2, i);
-        printf("%d\t%d\n", i, j);
+    for ( int i = 1; i <= 10; i++ ) {
+        printf("%dの3乗は、%d\n", i, powint(i, 3));
     }
 
     return 0;

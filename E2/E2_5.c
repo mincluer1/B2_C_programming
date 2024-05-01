@@ -10,8 +10,8 @@ int main(void)
 
 	cnt = 0;     /* cnt を初期化 */
 
-    for ( int i = a; i <= b; i ++ ) {
-        if ( i % 3 != 0 && i % 5 != 0 ) {
+    for ( int i = a; i < b; i ++ ) {
+        if ( i % 3 == 0 && i % 5 != 0 ) {
             cnt++;
         }
     }
