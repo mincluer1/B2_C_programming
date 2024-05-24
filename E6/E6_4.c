@@ -17,6 +17,12 @@ int main(void) {
     }
 
     for ( int i = 0; i < N; i++ ) {
+        printf("%d ", a[i]);
+    }
+
+    printf("\n");
+
+    for ( int i = 0; i < N; i++ ) {
         printf("%d ", b[i]);
     }
 

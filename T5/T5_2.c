@@ -11,7 +11,7 @@ int main(void) {
     scanf("%d", &b);
 
     for ( int i = 1; i < b; i ++ ) {
-        printf("log(%d)の小数点以下の数字は、%lf\n", i, decimal(b));
+        printf("log(%d)の小数点以下の数字は、%lf\n", i, decimal((double)i));
     }
 
     return 0;
