@@ -30,7 +30,10 @@ int main ( void ) {
 	// ここで行列の積 C = A B を求める
     for ( i = 0; i < M; i++ ) {
         for ( j = 0; j < M; j++ ) {
-            c[i][j] = a[i][0] * b[0][j] + a[i][1] * b[1][j] + a[i][2] * b[2][j];
+            c[i][j] = 0;
+            for ( int k = 0; k < M; k++ ) {
+                c[i][j] += a[i][k] * b[k][j];    
+            }
         }
     }
     print_array( c );
@@ -38,7 +41,10 @@ int main ( void ) {
 	// ここで行列の積 D = B A を求める
     for ( i = 0; i < M; i++ ) {
         for ( j = 0; j < M; j++ ) {
-            d[i][j] = b[i][0] * a[0][j] + b[i][1] * a[1][j] + b[i][2] * a[2][j];
+            d[i][j] = 0;
+            for ( int k = 0; k < M; k++ ) {
+                d[i][j] += b[i][k] * a[k][j];    
+            }    
         }
     }
 

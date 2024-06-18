@@ -11,16 +11,18 @@ int main( void ){
             person_cnt = i;
             break;
         }
+        printf("%d ", a[i]);
         sum += a[i];
         sumV += a[i] * a[i];
     }
 
     ave = sum / (double)person_cnt;
-    variance = ( sumV / person_cnt ) - ( ave * ave );
+    variance = ( sumV / (double)person_cnt ) - ( ave * ave );
 
+    printf("\n");
     printf("受験者数は、%d\n", person_cnt);
-    printf("テストの平均値は、%f\n", ave);
-    printf("テストの標準偏差は、%f\n", sqrt(variance));
+    printf("テストの平均値は、%.2f\n", ave);
+    printf("テストの標準偏差は、%.2f\n", sqrt(variance));
 
 	return 0;
 }

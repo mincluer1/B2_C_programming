@@ -5,12 +5,12 @@ int main(void){
     char large;
     char small;
 
-    printf("ƒAƒ‹ƒtƒ@ƒxƒbƒg‚Ì¬•¶Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢>>>");
+    printf("ã‚¢ãƒ«ãƒ•ã‚¡ãƒ™ãƒƒãƒˆã®å°æ–‡å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„>>>");
     scanf("%c\n", &small);
     diff = 'a' - 'A';
     large = small - diff;
 
-    printf("‘å•¶Žš‚Í%c ¬•¶Žš‚Í%c\n", large, small);
+    printf("å¤§æ–‡å­—ã¯%c å°æ–‡å­—ã¯%c\n", large, small);
 
     return 0;
 }

@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #define N 20
 
 int max(int num1, int num2) {

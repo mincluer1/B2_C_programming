@@ -20,14 +20,12 @@ int main(void) {
     };
 
     double x_dis, y_dis;
-    double dis;
-    double max_dis;
-    int max_dis_seat[ 2 ];
-    
-    int i, j;
+    double dis = 0;
+    double max_dis = 0;
+    int max_dis_seat[ 2 ] = {0, 0};
 
-    for ( i = 0; i < MAX_SEAT; i++ ) {
-        for ( j = i + 1; j < MAX_SEAT; j++ ) {
+    for ( int i = 0; i < MAX_SEAT; i++ ) {
+        for ( int j = i + 1; j < MAX_SEAT; j++ ) {
             x_dis = point[i][0] - point[j][0];
             y_dis = point[i][1] - point[j][1];
 

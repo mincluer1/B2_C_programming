@@ -19,10 +19,10 @@ int main(void) {
       { 5.8, 6.3 },
     };
 
-    double x_dis, y_dis;
-    double dis;
+    double x_dis = 0, y_dis = 0;
+    double dis = 0;
     double min_dis = 10;
-    int min_dis_seat[ 2 ];
+    int min_dis_seat[ 2 ] = {0, 0};
     
     int i, j;
 
